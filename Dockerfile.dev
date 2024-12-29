@@ -9,12 +9,3 @@ COPY . .
 
 # Install Angular CLI
 RUN npm install -g @angular/cli@19
-
-#Copy package.json file
-COPY package*.json ./
-
-# Install npm
-RUN npm install
-
-# Start the Angular development server
-CMD ["ng", "serve", "--host", "0.0.0.0"]

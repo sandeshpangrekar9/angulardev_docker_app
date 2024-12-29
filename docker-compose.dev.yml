@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    container_name: angular_docker_app_container
+    container_name: angulardev_docker_app_container
     build:
       context: .
       dockerfile: Dockerfile.dev
@@ -14,5 +14,5 @@ services:
       - "4200:4200"
     #environment:
     #  SERVER_NAME: localhost
-    # stdin_open: true
-    # tty: true
+    stdin_open: true
+    tty: true

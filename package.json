@@ -1,5 +1,5 @@
 {
-  "name": "ng-docker",
+  "name": "angulardev-docker-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

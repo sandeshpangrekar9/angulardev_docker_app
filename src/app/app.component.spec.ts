@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'ng-docker' title`, () => {
+  it(`should have the 'angulardev_docker_app' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ng-docker');
+    expect(app.title).toEqual('angulardev_docker_app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ng-docker');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angulardev_docker_app');
   });
 });
