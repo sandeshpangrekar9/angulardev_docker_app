@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: angular_docker_app_container
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: pangrekarsandesh/angular-docker-app-img:latest  # Specify your custom image name
+    volumes:
+      - .:/app:delegated
+      - /app/node_modules
+    ports:
+      - "4200:4200"
+    #environment:
+    #  SERVER_NAME: localhost
+    # stdin_open: true
+    # tty: true
